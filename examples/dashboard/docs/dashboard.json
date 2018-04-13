@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Templates",
+    "pages": [
+      {
+        "name": "T1 Example",
+        "url": "/pages/T1-Example.html",
+        "status": 0,
+        "links": [
+          {
+            "icon": "file-pdf-o",
+            "text": "PDF Link",
+            "url": "/some/url"
+          },
+          {
+            "text": "Reference designs",
+            "url": "/some/url"
+          },
+          {
+            "text": "Redmine ticket",
+            "url": "/some/url"
+          }
+        ]
+      },
+      {
+        "name": "T2 Example",
+        "url": "/pages/T2-Example.html",
+        "status": 1,
+        "notes": [
+          "A note",
+          "Another note"
+        ]
+      },
+      {
+        "name": "T3 Example",
+        "url": "/pages/T3-Example.html",
+        "status": 2
+      },
+      {
+        "name": "T4 Example",
+        "url": "/pages/T4-Example.html",
+        "status": 3,
+        "notes": [
+          "Awaiting design"
+        ]
+      },
+      {
+        "name": "T4 Example",
+        "url": "/pages/T4-Example.html",
+        "status": "Another status",
+        "notes": [
+          "Awaiting design"
+        ]
+      }
+    ]
+  }
+]

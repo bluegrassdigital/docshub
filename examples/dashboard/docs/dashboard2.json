@@ -1,0 +1,76 @@
+[
+  {
+    "title": "Downloads",
+    "subtitle": "Version 1.1.0",
+    "downloads": [
+      {
+        "platform": "apple",
+        "url": "manifest.plist",
+        "text": "Download for iOS"
+      },
+      {
+        "platform": "android",
+        "url": "app.apk",
+        "text": "Download for Android"
+      },
+      {
+        "platform": "windows",
+        "url": "app.msi",
+        "text": "Download for Windows"
+      },
+      {
+        "platform": "linux",
+        "url": "app.msi",
+        "text": "Download for Linux"
+      },
+      {
+        "platform": "file-archive-o",
+        "url": "app.msi",
+        "text": "Download zip"
+      },
+      {
+        "platform": "cloud-download",
+        "url": "app.msi",
+        "text": "Download file"
+      },
+      {
+        "platform": "file-pdf-o",
+        "url": "app.msi",
+        "text": "Download PDF"
+      }
+    ]
+  },
+  {
+    "subtitle": "Version 1.0.0",
+    "downloads": [
+      {
+        "platform": "apple",
+        "url": "manifest.plist",
+        "text": "Download for iOS"
+      },
+      {
+        "platform": "android",
+        "url": "app.apk",
+        "text": "Download for Android (x64)"
+      },
+      {
+        "platform": "android",
+        "url": "app.apk",
+        "text": "Download for Android (x86)"
+      },
+      {
+        "platform": "windows",
+        "url": "app.msi",
+        "text": "Download for Windows"
+      },
+      {
+        "platform": "linux",
+        "url": "app.msi",
+        "text": "Download for Linux"
+      }
+    ]
+  },
+  {
+    "markdown": "docs/CHANGELOG.md"
+  }
+]
