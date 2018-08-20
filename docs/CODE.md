@@ -106,20 +106,20 @@ eg.
 
 An embed, by default will simply take the html provided and render it in an iframe.
 
-<?codeembed adjust-height size="320x240">
+<?codeembed base="base.html" adjust-height size="320x240">
 <p>test</p>
 </codeembed?>
 
 ``` html
-<?codeembed adjust-height size="320x240">
+<?codeembed base="base.html" adjust-height size="320x240">
 <p>test</p>
 </codeembed?>
 ```
 
 #### base (codeembed attribute)
-Base specifies the url of the file to use as the base for the iframe. Defaults to a file hosted on github at https://raw.githubusercontent.com/bluegrassdigital/docshub/master/docs/base.html which looks like this:
+Base specifies the url of the file to use as the base for the iframe. This is required. At a minimum that file would contain:
 
-<?codeblock external="https://raw.githubusercontent.com/bluegrassdigital/docshub/master/docs/base.html" lang="html" prettify></codeblock?>
+<?codeblock external="base.html" lang="html" prettify></codeblock?>
 
 An element with id exampleContent is required as the injection point.
 
@@ -141,14 +141,14 @@ comma-separated list of css codeblock refs to add to the embed.
 #### seamless (codeembed attribute)
 An alternative style embed. Shows no sizing controls and no borders etc.
 
-<?codeembed seamless adjust-height size="320x240">
+<?codeembed seamless base="base.html" adjust-height size="320x240">
 <p>test</p>
 </codeembed?>
 
 #### minimal (codeembed attribute)
 Another alternative minimal style that still shows size controls
 
-<?codeembed minimal adjust-height size="320x240">
+<?codeembed minimal base="base.html" adjust-height size="320x240">
 <p>test</p>
 </codeembed?>
 
@@ -179,21 +179,16 @@ So the simplest implementation of tabs would be:
 ``` html
 <?tabs>
 <codeembed
+  base="base.html"
   adjust-height
   size="iphone5s"
   use-html="html-eg"
   title="Result"
   script-refs="script-eg"
-  style-refs="style-eg"
   minimal
 ></codeembed>
 <codeblock lang="html" ref="html-eg" title="The HTML">
 <p id="test">test</p>
-</codeblock>
-<codeblock lang="css" ref="style-eg" title="The CSS">
-#test {
-  color: orange;
-}
 </codeblock>
 <codeblock lang="javascript" ref="script-eg" title="The JS">
 document.querySelector('#test').style.color = 'blue';
@@ -203,6 +198,7 @@ document.querySelector('#test').style.color = 'blue';
 
 <?tabs>
 <codeembed
+  base="base.html"
   adjust-height
   size="iphone5s"
   use-html="html-eg"
