@@ -1,4 +1,4 @@
-DocsHub allows you to write your docs in markdown and render them in a clean, simple interface
+DocsHub allows you to write your docs in markdown and render them in a clean, simple interface.
 
 ## Setup
 
@@ -10,7 +10,7 @@ Here you configure the path to your JSON config file by changing `window.docsCon
 
 ### Config JSON
 
-Inside the config file we configure some globals - the logo, the brand colour, the project name and version and the menu. A config file would look something like this:
+Inside the config file we configure some globals - the logo, the brand colour, the project name and version, and the menu. A config file would look something like this:
 
 <?codeblock external="config.json" lang="json"></codeblock?>
 
@@ -22,12 +22,12 @@ There are 5 page types:
 
 1. `page` - markdown or html pages - these pages are treated as content. We have some special syntax for embedding code widgets in your docs which is described below.
 2. `dashboard` - a dashboard page is a composable page type made up of different sections configured in a JSON file.
-3. `iframe` - iframe that fills up the content area
-4. `remotepage` - remote version of page
-5. `remotedashboard` - remote version of dashboard
-6. `remoteiframe` - remote version of iframe
+3. `iframe` - iframe that fills up the content area.
+4. `remotepage` - remote version of page.
+5. `remotedashboard` - remote version of dashboard.
+6. `remoteiframe` - remote version of iframe.
 
-So if I have a readme page at `docs/README.md` the url would be `page/docs/README.md` - this is case insensitive
+So if I have a readme page at `docs/README.md` the url would be `page/docs/README.md` - this is case insensitive.
 
 For 'remote' sources the file-path would be the full URL path without the protocol - e.g `remotepage/raw.githubusercontent.com/bluegrassdigital/blue-js/master/README.md`
 
@@ -35,7 +35,7 @@ For 'remote' sources the file-path would be the full URL path without the protoc
 
 A page is just html or markdown.
 
-Pages support YML Front matter configuration. Currently the only variable that will be used is `name` which will be used in the header (if not set then the name from the menu is used, and if there is no menu item then there will be no page name)
+Pages support YML Front matter configuration. Currently the only variable that will be used is `name` which will be used in the header (if not set then the name from the menu is used, and if there is no menu item then there will be no page name).
 
 #### dashboard
 
