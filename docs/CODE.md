@@ -6,7 +6,7 @@ These custom docshub "widgets" are documented below.
 
 ## Supported languages
 
-You can render anything in a code block, however only a certain subset of languages are supporte for syntax highlighting.
+You can render anything in a code block, however only a certain subset of languages are supported for syntax highlighting.
 
 - xml
 - html
@@ -15,35 +15,6 @@ You can render anything in a code block, however only a certain subset of langua
 - coffeescript
 - css
 - markdown
-- bash
-- clojure
-- coffeescript
-- css
-- markdown
-- dart
-- diff
-- dockerfile
-- ruby
-- go
-- gradle
-- haml
-- handlebars
-- java
-- javascript
-- json
-- less
-- nginx
-- objectivec
-- powershell
-- python
-- scala
-- scss
-- shell
-- stylus
-- swift
-- yaml
-- typescript
-- vbnet
 - dart
 - diff
 - dockerfile
@@ -90,7 +61,7 @@ Any one of the above options. Dochsub will try to auto detect based on content i
 
 #### prettify (codeblock attribute)
 
-If this attribute is present, content is prettified. Only works for css, scss, less, js, json, javascript, typescript, html
+If this attribute is present, content is prettified. Only works for css, scss, less, js, json, javascript, typescript, and html.
 
 #### external (codeblock attribute)
 
@@ -127,16 +98,16 @@ An element with id exampleContent is required as the injection point.
 When use-html is provided this specifies the ref of the codeblock to use as the injected html rather than the children of the widget.
 
 #### stylesheets (codeblock attribute)
-comma-separated list of external stylesheets to add to the embed.
+Comma-separated list of external stylesheets to add to the embed.
 
 #### scripts (codeembed attribute)
-comma-separated list of external javascript files to add to the embed.
+Comma-separated list of external javascript files to add to the embed.
 
 #### script-refs (codeembed attribute)
-comma-separated list of javascript codeblock refs to add to the embed.
+Comma-separated list of javascript codeblock refs to add to the embed.
 
 #### style-refs (codeembed attribute)
-comma-separated list of css codeblock refs to add to the embed.
+Comma-separated list of css codeblock refs to add to the embed.
 
 #### seamless (codeembed attribute)
 An alternative style embed. Shows no sizing controls and no borders etc.
@@ -146,7 +117,7 @@ An alternative style embed. Shows no sizing controls and no borders etc.
 </codeembed?>
 
 #### minimal (codeembed attribute)
-Another alternative minimal style that still shows size controls
+Another alternative minimal style that still shows size controls.
 
 <?codeembed minimal base="base.html" adjust-height size="320x240">
 <p>test</p>
@@ -154,7 +125,7 @@ Another alternative minimal style that still shows size controls
 
 
 #### adjust-height (codeembed attribute)
-Will adjust height to fit the content (up to the height defined in the ssize attribute)
+Will adjust height to fit the content (up to the height defined in the size attribute).
 
 #### min-height (codeembed attribute)
 Minimum height of iframe. If you're rendering something that expends on interaction (like a menu or accordion) you might need this attribute to set a minimum height.
@@ -172,7 +143,7 @@ OR a custom size in the format `{width}x{height}` - eg. `400x600`
 ### tabs
 Tabs are a nice clean way of tying your embeds and code display into a single interface.
 
-codeembed and codeblock widgets arledy extend off of a base widget that is a tab. Each widget supports a `title` attribute which shows as the tabs title if rendered inside a tabs widget.
+Codeembed and codeblock widgets already extend off of a base widget that is a tab. Each widget supports a `title` attribute which shows as the tabs title if rendered inside a tabs widget.
 
 So the simplest implementation of tabs would be:
 
